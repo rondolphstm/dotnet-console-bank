@@ -10,7 +10,7 @@ BankAccount account2 = new SavingAccount(500);
 try{
 decimal newBalance = account2.MakeDepositGetBalance(-1);
 } catch(Exception ex){
-    Console.WriteLine($"we got an error when running MakeDepositGetBalance(-1) on line 11");
+    Console.WriteLine($"we got an error when running MakeDepositGetBalance(-1) on line 11 " + ex.Message);
 }
 
 Console.WriteLine($"The balance of account is {account.Balance}");
